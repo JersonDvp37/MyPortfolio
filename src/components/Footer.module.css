@@ -1,0 +1,36 @@
+.footer {
+  background-color: #ffffff;
+  border-top: 1px solid #e5e7eb;
+  margin-top: 4rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .footer {
+    background-color: #0f172a;
+    border-top-color: #1e293b;
+  }
+}
+
+.content {
+  max-width: 56rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .content {
+    padding: 2rem 1.5rem;
+  }
+}
+
+.text {
+  color: #4b5563;
+  font-size: 0.875rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .text {
+    color: #9ca3af;
+  }
+}

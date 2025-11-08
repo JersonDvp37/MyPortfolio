@@ -1,0 +1,114 @@
+.header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  padding: 1rem 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .header {
+    background-color: #0f172a;
+    border-bottom-color: #1e293b;
+  }
+}
+
+.headerContent {
+  max-width: 56rem;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .headerContent {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 3rem 1.5rem;
+  }
+}
+
+.titleSection {
+  flex: 1;
+}
+
+.name {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #111827;
+  letter-spacing: -0.025em;
+}
+
+@media (min-width: 640px) {
+  .name {
+    font-size: 3rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .name {
+    color: #ffffff;
+  }
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  color: #4b5563;
+  margin-top: 0.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .subtitle {
+    color: #9ca3af;
+  }
+}
+
+.socialLinks {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.socialLink {
+  padding: 0.5rem;
+  color: #6b7280;
+  transition: color 0.2s;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .socialLink {
+    color: #9ca3af;
+  }
+}
+
+.socialLink.github:hover {
+  color: #1f2937;
+}
+
+@media (prefers-color-scheme: dark) {
+  .socialLink.github:hover {
+    color: #d1d5db;
+  }
+}
+
+.socialLink.linkedin:hover {
+  color: #0077b5;
+}
+
+@media (prefers-color-scheme: dark) {
+  .socialLink.linkedin:hover {
+    color: #3b82f6;
+  }
+}
+
+.socialLink.portfolio:hover {
+  color: #3b82f6;
+}
+
+@media (prefers-color-scheme: dark) {
+  .socialLink.portfolio:hover {
+    color: #60a5fa;
+  }
+}

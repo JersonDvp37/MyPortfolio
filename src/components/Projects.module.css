@@ -1,0 +1,115 @@
+.section {
+  margin-bottom: 0rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.projectLink {
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.projectLink:hover {
+  transform: translateY(-2px);
+}
+
+.projectLink:hover .projectTitle {
+  color: #2563eb;
+}
+
+@media (prefers-color-scheme: dark) {
+  .projectLink:hover .projectTitle {
+    color: #60a5fa;
+  }
+}
+
+.projectLink:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {  
+  .projectLink:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.projectHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.projectTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #111827;
+  transition: color 0.2s;
+}
+
+@media (prefers-color-scheme: dark) {
+  .projectTitle {
+    color: #ffffff;
+  }
+}
+
+.icon {
+  color: #9ca3af;
+  transition: color 0.2s;
+  flex-shrink: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .icon {
+    color: #9ca3af;
+  }
+}
+
+.projectLink:hover .icon {
+  color: #2563eb;
+}
+
+@media (prefers-color-scheme: dark) {
+  .projectLink:hover .icon {
+    color: #60a5fa;
+  }
+}
+
+.badge {
+  display: inline-block;
+  background-color: #eff6ff;
+  color: #1e40af;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .badge {
+    background-color: rgba(30, 58, 138, 0.3);
+    color: #60a5fa;
+  }
+}
+
+.description {
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+
+@media (prefers-color-scheme: dark) {
+  .description {
+    color: #d1d5db;
+  }
+}

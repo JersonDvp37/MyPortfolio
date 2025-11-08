@@ -1,0 +1,38 @@
+.section {
+  margin-bottom: 2rem;
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .skillsGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.skillItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #374151;
+}
+
+@media (prefers-color-scheme: dark) {
+  .skillItem {
+    color: #d1d5db;
+  }
+}
+
+.check {
+  color: #2563eb;
+}
+
+@media (prefers-color-scheme: dark) {
+  .check {
+    color: #60a5fa;
+  }
+}

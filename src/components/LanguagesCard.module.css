@@ -1,0 +1,46 @@
+.title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .title {
+    color: #9ca3af;
+  }
+}
+
+.languagesList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.language {
+  margin-bottom: 0.5rem;
+}
+
+.languageName {
+  color: #374151;
+  font-weight: 500;
+}
+
+@media (prefers-color-scheme: dark) {
+  .languageName {
+    color: #d1d5db;
+  }
+}
+
+.languageLevel {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+@media (prefers-color-scheme: dark) {
+  .languageLevel {
+    color: #9ca3af;
+  }
+}
