@@ -27,7 +27,13 @@ export default function Projects() {
 
   return (
     <section className={styles.section}>
-      <SectionTitle>Projects</SectionTitle>
+      <SectionTitle>Projects </SectionTitle>
+      <p style={{fontWeight: 600, padding: "0 2rem"}}>
+        <li>
+          Frontend Hosted/Deployed on Vercel, serverless.
+        </li> 
+      </p>
+      <br />
       <div className={styles.grid}>
         {projects.map((project, index) => (
           <a key={index} href={project.href} target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
